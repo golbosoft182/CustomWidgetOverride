@@ -1,0 +1,154 @@
+
+
+& when (@media-common = true) {
+  .zoo-main-heading, .rokan-product-heading {
+    padding: 0 20px;
+    box-sizing: border-box;
+    h2 {
+      .lib-font-size(20);
+    }
+  }
+  .lingble-new {
+    padding: 0 20px;
+    position: relative;
+    &.lingble-list {
+      box-sizing: border-box;
+      .owl-carousel.owl-theme {
+        padding-left: 0;
+        ul {
+          padding-left: 0;
+        }
+        box-sizing: border-box;
+        .owl-buttons {
+          text-align: center;
+          opacity: 1;
+          width: 80px;
+          > div {
+            float: left;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            color: #333;
+            background: #eee;
+            border-radius: 0;
+            box-sizing: border-box;
+            position: relative;
+            &:after {
+              border-style: solid;
+              border-width: 0.25em 0.25em 0 0;
+              content: '';
+              display: inline-block;
+              height: 0.45em;
+              left: 0.15em;
+              position: relative;
+              top: 0.15em;
+              transform: rotate(-45deg);
+              vertical-align: top;
+              width: 0.45em;
+              left: 0.25em;
+              transform: rotate(-135deg);
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              
+            }
+            &.owl-next {
+              float: right;
+              &:after {
+                left: 0;
+                transform: rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+      figure {
+        h3 {
+          a {
+            font-weight: 300;
+          }
+        }
+        position: relative;
+        .secondary-image {
+          visibility: hidden;
+          opacity: 0;
+          -webkit-transition: opacity .4s ease, transform .4s ease, visibility .4s linear 0s;
+          -moz-transition: opacity .4s ease, transform .4s ease, visibility .4s linear 0s;
+          transition: opacity .4s ease, transform .4s ease, visibility .4s linear 0s;
+        }
+        .main-image {
+          -webkit-transition: opacity .4s ease, transform .4s ease, visibility .4s linear 0s;
+          -moz-transition: opacity .4s ease, transform .4s ease, visibility .4s linear 0s;
+          transition: opacity .4s ease, transform .4s ease, visibility .4s linear 0s;
+          text-align: center;
+          margin: 0 auto;
+          float: none;
+          display: block;
+        }
+        &:hover {
+          .secondary-image {
+            visibility: visible;
+            opacity: 1;
+          }
+          .main-image {
+            visibility: hidden;
+            opacity: 0;
+          }
+          .product-quickview.action.primary {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+        .product-info {
+          float: left;
+          a {
+            color: #000;
+          }
+        }
+        .price-box {
+          margin-top: 0;
+          float: left;
+          clear: both;
+        }
+        a.main-image-action {
+          position: absolute;
+          text-align: center;
+          margin: 0 auto;
+          float: none;
+          display: block;
+          top: 20px;
+          right: 0;
+          left: 0;
+        }
+        .product-action {
+          text-align: right;
+          .action.towishlist {
+            color: #bbb;
+            font-weight: 600;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            display: inline-block;
+            text-decoration: none;
+            .fa-star {
+              font-size: 1.8rem;
+            }
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+      .owl-carousel {
+        list-style: none;
+      }
+      .owl-controls {
+        position: absolute;
+        top: -60px;
+        right: 0;
+      }
+    }
+  }
+}
